@@ -11,3 +11,14 @@ if (var1 == var2) {
 } else {
     console.log(false);
 }
+
+function startCar(carID) {
+    let message = 'Starting...';
+    let startFn = function turnKey() {
+        let message = 'Override';
+        console.log(message);
+    };
+    startFn();
+    console.log(message);
+}
+startCar(123);
